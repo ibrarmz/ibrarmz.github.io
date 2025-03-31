@@ -1,0 +1,93 @@
+/* Contenedor principal */
+#code-container {
+    display: flex;
+    color: #d4d4d4;
+    font-family: 'Roboto', sans-serif;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 2px solid rgba(24, 40, 54, 0.5);
+    overflow: hidden;
+    width: 40%;
+    height: 600px;
+    /* Ajusta la altura según necesites */
+}
+
+.code-container--header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-top: 2px solid rgba(24, 40, 54, 0.5);
+    border-left: 2px solid rgba(24, 40, 54, 0.5);
+    border-right: 2px solid rgba(24, 40, 54, 0.5);
+}
+
+.code-container--header h3 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 3px solid rgba(24, 40, 54, 0.5);
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.me-profile--container {
+    width: 80px; /* Ajusta el tamaño del contenedor según lo que necesites */
+    height: 80px; /* Asegúrate de que sea un cuadro perfecto para un círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/me.jpg');
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+    overflow: hidden; /* Asegura que la imagen no se salga del círculo */
+    padding: 2rem;
+}
+
+
+/* Números de línea */
+#line-numbers {
+    color: #888;
+    padding: 15px 10px;
+    text-align: right;
+    user-select: none;
+    border-right: 3px solid rgba(24, 40, 54, 0.5);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Estilo del textarea */
+#code-block {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: #7A7A7A;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow-y: auto;
+    resize: none;
+    /* Evitar el cambio de tamaño */
+    white-space: pre-wrap;
+    /* Mantener saltos de línea */
+    outline: none;
+    /* Sin contorno cuando se selecciona */
+    border-radius: 0;
+}
+
+/* Asegurarse de que los números de línea se ajusten bien */
+#code-container pre code {
+    display: block;
+    width: 100%;
+}
