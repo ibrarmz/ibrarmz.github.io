@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/css/reset.css" />
+  <link rel="stylesheet" href="src/css/styles.css" />
+  <link rel="stylesheet" href="src/css/code.css">
+  <script src="https://kit.fontawesome.com/38981f7228.js" crossorigin="anonymous"></script>
+  <title>Portafolio de Ibra</title>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="btns_navbar_container">
+        ibrahim-ramirez
+    </a>
+    <nav>
+      <a href="#hero">hello</a>
+      <a href="#about-me">about-me</a>
+      <a href="#proyectos">projects</a>
+    </nav>
+    <a href="#contacto" class="btns_navbar_container">
+        contact-me
+    </a>
+  </header>
+
+  <section id="hero">
+    <p>Hi all. I am</p>
+    <h1 class="terminal-blink" id="hero-text">Ibrahim Ramirez</h1>
+    <p><span>Fullstack developer with experience in .NET, Angular, Node.js, SQL and Godot.</span></p>
+  </section>
+
+  <section id="about-me">
+    <div class="code-container--header">
+      <h3>ABOUT-ME</h3>
+      <div class="me-profile--container">
+      </div>
+    </div>
+    <div id="code-container">
+      <div id="line-numbers"></div>
+      <textarea id="code-block" readonly>
+/* *
+I am Ibrahim Ramirez, a systems engineer with almost 5 years of experience in software development. 
+I have worked mainly with .NET, Node.js,
+TypeScript and Angular, developing scalable and efficient solutions.
+In addition, I have extensive experience in databases such as SQL Server, MySQL, SQL Oracle and some knowledge in MongoDB.
+I also have experience in 2D video game development, and I have been a university professor teaching classes mainly on 
+Object Oriented Programming and Computer Security.
+I have had the opportunity to participate in two editions of MICAI, working on projects related to Machine Learning and 
+Data Science, such as the development of a Covid-19 variant detection and prevention algorithm.
+Always looking for new challenges and projects that allow me to continue growing both professionally and personally.
+*/
+      </textarea>
+    </div>    
+      
+  </section>
+
+  <section id="proyectos">
+    <h2>Projects</h2>
+    <div class="project-card--container">
+      <div class="proyecto-card">
+        <img src="src/img/ai-image.png" alt="" srcset="">
+        <div class="project-text--card-container">
+          <h3>ai-image-generator</h3>
+          <p>An AI image generator built with Angular and powered by the Stable Diffusion API.</p>
+          <a href="https://github.com/ibrarmz/image-generator">view-project-on-github</a>
+        </div>
+      </div>
+  
+      <div class="proyecto-card">
+        <img src="src/img/project02.png" alt="" srcset="">
+        <div class="project-text--card-container">
+          <h3>template-api-express-ts</h3>
+          <p>Template for creating REST APIs with TS and Express, with Winston-based records and API key protection.</p>
+          <a href="https://github.com/ibrarmz/template-api-express-ts" target="_blank">view-project-on-github</a>
+        </div>
+      </div>
+  
+  
+      <div class="proyecto-card">
+        <img src="src/img/project03.png" alt="" srcset="">
+        <div class="project-text--card-container">
+          <h3>dnd-text-combat</h3>
+          <p>A simple text-based game using basic Dungeons & Dragons rules, built with TypeScript and Node.js.</p>
+          <a href="https://github.com/ibrarmz/dnd-text-combat">view-project-on-github</a>
+        </div>
+      </div>
+  
+  
+      <div class="proyecto-card">
+        <img src="src/img/project04.png" alt="" srcset="">
+        <div class="project-text--card-container">
+          <h3>2d-platform-game</h3>
+          <p>An exciting 2D platformer developed in Godot with GDScript, featuring 5 challenging levels and culminating in an epic final boss battle.</p>
+          <a href="https://github.com/ibrarmz/Godot-2D-Platformer">view-project-on-github</a>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contact</h2>
+    <p>Interested in collaborating? Contact me:</p>
+    <a href="mailto:ibrahimramirez085@gmail.com">Send Email</a>
+  </section>
+
+  <footer>
+    <div class="findme-container">
+      <div class="btns_navbar_container">
+        find me in:
+      </div>
+      <a href="https://www.linkedin.com/in/ibrahim-ramirez/" target="_blank" class="findme-icons">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+    
+    <a href="https://github.com/ibrarmz" target="_blank" class="btns_navbar_container">
+        @ibrarmz <i class="fab fa-github"></i>
+    </a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="src/js/main.js"></script>
+  <script src="src/js/code-container.js"></script>
+</body>
+</html>
