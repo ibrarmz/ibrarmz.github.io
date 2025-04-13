@@ -6,7 +6,7 @@ function updateLineNumbers() {
     let lineNumberText = "";
 
     // Crear los números de línea
-    for (let i = 1; i <= 18; i++) {
+    for (let i = 1; i <= 25; i++) {
         lineNumberText += `${i}\n`;
     }
 
